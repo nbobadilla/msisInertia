@@ -1,0 +1,38 @@
+{
+    "name":"cbInertia",
+    "version":"1.4.2",
+    "author":"Eric Peterson",
+    "location":"forgeboxStorage",
+    "homepage":"https://github.com/elpete/cbInertia",
+    "documentation":"https://github.com/elpete/cbInertia",
+    "repository":{
+        "type":"git",
+        "URL":"https://github.com/elpete/cbInertia"
+    },
+    "bugs":"https://github.com/elpete/cbInertia/issues",
+    "slug":"cbInertia",
+    "shortDescription":"The ColdBox adapter for Inertia.js",
+    "description":"The ColdBox adapter for Inertia.js",
+    "type":"modules",
+    "dependencies":{
+        "vue-helpers":"^1.0.2"
+    },
+    "devDependencies":{
+        "coldbox":"^5.5.0+958",
+        "testbox":"^2.4.0+80"
+    },
+    "installPaths":{
+        "testbox":"testbox/",
+        "coldbox":"tests/resources/app/coldbox/",
+        "vue-helpers":"modules/vue-helpers/"
+    },
+    "scripts":{
+        "format":"cfformat run helpers/**/*.cfc,interceptors/**/*.cfc,models/**/*.cfc,tests/specs/**/*.cfc --overwrite",
+        "format:check":"cfformat check helpers/**/*.cfc,interceptors/**/*.cfc,models/**/*.cfc,tests/specs/**/*.cfc"
+    },
+    "ignore":[
+        "**/.*",
+        "test",
+        "tests"
+    ]
+}
