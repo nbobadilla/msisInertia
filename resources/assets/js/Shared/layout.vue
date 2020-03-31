@@ -1,16 +1,3 @@
-<script src="https://cdn.jsdelivr.net/npm/quasar@1.9.12/dist/quasar.umd.min.js"></script>
-<!---<template>
-  <div id="app" class="antialiased text-gray-900">
-    <div class="bg-gray-200 min-h-screen">
-      <div class="container mx-auto mt-4">
-          Hello World!
-          <slot></slot>
-          This is it!
-      </div>
-    </div>
-  </div>
-</template>--->
-
 <template>
 <div id="q-app">
     <q-layout view="hHh lpR fFf">
@@ -377,7 +364,7 @@
                 <div class="col-12 col-md-10 bg-grey-3">
                     
                         
-                    <!---These are the Breadcrumbs, need to decide where to put these.
+                    <!--These are the Breadcrumbs, need to decide where to put these.
                         
                         <q-breadcrumbs class="q-mb-lg">
                         <template v-slot:separator>
@@ -389,7 +376,7 @@
                         </template>
                         <q-breadcrumbs-el label="MSIS" class="text-grey-7"></q-breadcrumbs-el>
                         <q-breadcrumbs-el label="Dashboard" icon="dashboard"></q-breadcrumbs-el>
-                    </q-breadcrumbs>--->
+                    </q-breadcrumbs>-->
                     
 
                     <slot></slot>
@@ -412,15 +399,22 @@
 </div>
 </template>
 
+
+
 <script>
 
 export default {
-    components: {
-       Quasar: window["Quasar"] 
-    },
-    mounted: {
-        Quasar: window["Quasar"] 
-    }
+    data: function () {
+        return {
+            tab: 'dashboard',
+            left: false,
+            studentid: '',
+            coe: '',
+            right: false,
+            left: false,
+            quickSearchText: ''
+        }
+     }
     
 }
 

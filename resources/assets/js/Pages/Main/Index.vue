@@ -21,4 +21,4 @@ export default {
     }
     
 }
-</script>＀
+</script>
