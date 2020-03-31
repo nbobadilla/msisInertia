@@ -3,6 +3,13 @@ import VueMeta from "vue-meta";
 import PortalVue from "portal-vue";
 import { InertiaApp } from "@inertiajs/inertia-vue";
 
+// import Quasar from "quasar-framework/dist/quasar.mat.esm";
+// import "quasar-framework/dist/umd/quasar.mat.css";
+// import {ClosePopup} from 'quasar-framework'
+import Quasar from "quasar";
+import "quasar/dist/quasar.css"
+Vue.use(Quasar)
+
 Vue.config.productionTip = false;
 Vue.use(InertiaApp);
 Vue.use(PortalVue);
