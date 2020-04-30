@@ -16,7 +16,7 @@
         "@inertiajs/inertia": "^0.1.7",
         "@inertiajs/inertia-vue": "^0.1.2",
         "bootstrap": "^4.3.1",
-        "jquery": "^3.4.1",
+        "jquery": "^3.5.0",
         "popper.js": "^1.15.0",
         "portal-vue": "^2.1.7",
         "quasar": "^1.9.12",
